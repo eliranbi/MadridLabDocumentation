@@ -76,21 +76,30 @@ In this lab we will use the following tools :
 
     -   Brackets Beautify
 
+	<img src=images/Intro-03-brackets-extensions.png width=600>
+
 ### Preview the Ionic app
 
 Lets start with preview our existing Ionic Employee Directory application.
 
 1.  Start Brackets and choose “Open folder” and select the IBMEmployeeApp
     folder.
+	<img src=images/Intro-04-open.png width=400>	
+
 
 2.  Use the Brackets file Navigator to locate and click on
     **IBMEmployeeApp/www/index.html**.
+    
+
 
 3.  Click the **lighting** icon in the upper right portion of the Brackets
     window to preview the completed application in the browser.
 
-You can use any combination of user name and password to login
+    <img src=images/Intro-05-brackets-icons.png width=80>
 
+Fro the username and password use the combination of **demo/demo** to login
+
+<img src=images/Intro-05.1-app-login.png width=220><img src=images/Intro-06-app-splash.png width=220><img src=images/Intro-07-app-list.png.png width=220><img src=images/Intro-08-app-details.png width=220><img src=images/Intro-09-app-slider.png width=220>
   
 
 
