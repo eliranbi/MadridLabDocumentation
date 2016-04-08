@@ -16,20 +16,26 @@ General Steps:
 2. **Add** the iOS platfrom, run the following command cordova platform add ios (we didnt check the platfrom folder to our git-repo so you will need to add it yourself) 
 
         cordova platform add ios
-     <img src="images/Lab2-add-ios.png" width=600/>
+     <img src="images/Lab2-add-ios.png" width=500/>
 
 3. **Run** the cordova plugin add cordova-plugin-mfp ( running this command will add some additional plugins to our project like: cordova-plugin-device, cordova-plugin, globalization	fetch.json, cordova-plugin-dialogs, cordova-plugin-mfp )
 
         cordova plugin add cordova-plugin-mfp
      <img src="images/Lab2-add-plugin.png" />
 
-4. **Run** the mfpdev app preview
+4. **Start** the mobile first server, navigate to your mobile first server installation folder and run the following command
+
+        ./run.sh
+       
+  <img src="images/Lab2-mfp-server.png" width=500/>
+  
+5. **Run** the mfpdev app preview
 
         mfpdev app preview
 
   <img src="images/Lab2-run-mfpdev-preview.png"/>
 
-5.  You will see the app start on your default borwser
+6.  You will see the app start on your default borwser
 
   <img src="images/Lab2-browser.png" width="250"/>
 
