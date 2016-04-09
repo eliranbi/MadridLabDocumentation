@@ -19,7 +19,7 @@ The following exercise includes 9 micro labs (\~15 min each)
 
 -   Lab \# 3 - Load MFP framework and application Bootstrapping
 
--   Lab \# 4 - Use MFP new CLI to preview and register your application
+-   Lab \# 4 - Use MFP CLI to register and manage your application
 
 -   Lab \# 5 - Using MFP adapters frameworks (Server Side)
 
