@@ -31,7 +31,9 @@ The following exercise includes 9 micro labs (\~15 min each)
 
 -   Lab \# 9 - How to create custom charts and alerts.
 
--   Lab \# 10 - How to secure your application
+-   Lab \# 10 - How to secure your application (Server side)
+
+-   Lab \# 11 - How to secure your application (Client side)  
 
 ### Source code for labs
 
