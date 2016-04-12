@@ -13,6 +13,12 @@ The tools to install include:
 - Install Maven
 - Create Bluemix Account
 - Install MobileFirst 8.0 beta Command Line Utility
+- Install MobileFirst 8.0 beta Development Kit
+- Install IntelliJ IDEA Community Edition
+
+Optional installs
+- Create an Ionic Creator Account
+
 
 ## Install Java
 You will need one of the following installed:
@@ -138,4 +144,51 @@ You can confirm the installation by typing
 You should see something similar to
 
 `8.0.0-201603280000`
+
+## Install MobileFirst 8.0 beta Development Kit
+IBM MobileFirst Platform Foundation v8.0 beta consists of the following components: MobileFirst Server & MobileFirst Operations Console, MobileFirst Command-line Interface (CLI), MobileFirst client SDKs and MobileFirst adapter tooling.
+
+These components can be installed either seperately via online repositories which contain the latest releases, or downloaded bundled together through the MobileFirst Platform Foundation Development Kit Installer, for future or offline use.
+
+> **Note:** That you installed the CLI (Command-Line-Interface) from npm in the previous step. 
+
+## Install IntelliJ IDEA Community Edition
+For the labs you will need an editor, preferably one that supports Java, Maven, and Git. We have chosen IntelliJ Community Edition because it supports all the features we need to run the labs.
+
+To install IntelliJ, visit https://www.jetbrains.com/idea/download/ and select the operating system you are running (Mac, Windows, or Linux) and download. Run the appropriate installation from the download.
+
+## Create an Ionic Creator Account (Optional)
+If you would like to have a tool for visually creating your Ionic User interface, then you may want to create an account at Ionic Creator. To do that visit https://creator.ionic.io/app/signup and signup.
+
+> **Note:** None of the labs require Ionic Creator so it is not mandatory
+
+## Important Links
+[Java Download](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
+[NodeJS Download](https://nodejs.org/en/download/)
+
+[NodeJS Documentation](https://nodejs.org/dist/latest-v4.x/docs/api/)
+
+[Cordova Home](https://cordova.apache.org)
+
+[Ionic Home](http://ionicframework.com)
+
+[Ionic Documentation](http://ionicframework.com/docs/)
+
+[Maven Home](https://maven.apache.org)
+
+[Maven Documentation](https://maven.apache.org/guides/index.html)
+
+[Bluemix](https://console.ng.bluemix.net)
+
+[Mobile Foundation on Bluemix Documentation](https://console.ng.bluemix.net/docs/services/mobilefoundation/index.html)
+
+[IBM MobileFirst Home](https://mobilefirstplatform.ibmcloud.com/)
+
+[IBM MobileFirst 8.0 Downloads](https://mobilefirstplatform.ibmcloud.com/downloads/)
+
+[IBM MobileFirst 8.0 Documentation](http://www.ibm.com/support/knowledgecenter/SSHS8R_8.0.0/wl_welcome.html?cp=SSVNYL)
+
+[IntelliJ IDEA Home](https://www.jetbrains.com/idea/)
+
 
