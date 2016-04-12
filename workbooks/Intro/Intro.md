@@ -11,7 +11,7 @@ The activity will start with an Ionic project that we have already created (see
 git repo below). The application is an Employee Directory application, named
 IBMEmployeeApp
 
-The following exercise includes 9 micro labs (\~15 min each)
+The following exercise includes 11 micro labs (\~20 min each)
 
 -   Lab \# 1 - Understand the Ionic application and learn how to customize it
 
