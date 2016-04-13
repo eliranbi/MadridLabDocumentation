@@ -41,7 +41,7 @@ In order to get the latest code for the ionic application, run the following git
 command:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- git clone https://github.com/eliranbi/MadridMFPLab.git
+ git clone https://github.com/eliranbi/IBMEmployeeApp
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once you clone the repo you will notice the following directories :
