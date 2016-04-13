@@ -41,31 +41,31 @@ In order to get the latest code for the ionic application, run the following git
 command:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- git clone https://github.com/eliranbi/IBMEmployeeApp
+ git clone https://github.com/eliranbi/MadridMFPLabAll
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once you clone the repo you will notice the following directories :
 
--   **EmployeeBackEnd** - Is MFP backend project that contains the adapters
-    which implement the back-end integration code.
+-   **AdapterServices** - Is a folder that contian our MFP adapter projects, the adapters implement the back-end integration code.
 
 -   **IBMEmployeeApp** - Is our base Ionic Application that we are going to use
     for adding the MFP plugin.
 
-In later steps, a **/snippets** folder will be added here, during a git checkout
-step. This folder will contain a collection of copy/paste fragments to simplify
+-   **LabDocuments** - Contain the workbooks for his lab.
+-   **snippets** - Contain a collection of copy/paste fragments to simplify
 making the required source code changes in the labs. They are labeled by lab
-name and task, and should be easy to locate and use.
+name and task, and should be easy to locate and use.the snippets code foe the lab. 
+    
 
 ### Tools used in labs
 
 In this lab we will use the following tools :
 
-1.  The MFP Command Line Interface (CLI) to interact with the MobileFirst
+1.  The **MFP** mfpdev Command Line Interface (CLI) to interact with the MobileFirst
     Plaform, create projects, create adapters, deploy to the mfp server, view
     our mfp console etc.
 
-2.  Your choice of IDE to edit the code. The Brackets IDE was used throughout
+2.  Your choice of IDE to edit the code. The **Brackets IDE** was used throughout
     these labs and can be downloaded from here : <http://brackets.io>. Brackets
     is a modern, open source text editor that understands web design. You can
     also use the Brackets Extension manager to install additional plugins for
@@ -79,6 +79,14 @@ In this lab we will use the following tools :
     -   Brackets Beautify
 
 	<img src=images/Intro-03-brackets-extensions.png width=600>
+
+3. **IntelliJ IDEA** will be used to create a MFP adapter and uset the built-in Maven project features, IntelliJ IDEA is a Java integrated development environment (IDE) for developing computer software. It is developed by JetBrains, and is available as an Apache 2 Licensed community edition. [https://www.jetbrains.com/idea/download/](https://www.jetbrains.com/idea/download/)
+
+	<img src=images/Intro-Intellij.png width=600>
+
+4. **Cordova** command line interface (CLI), This tool allows you to create new projects, build them on different platforms, and run on real devices or within emulators. The CLI is the main tool to use for the cross-platform workflow
+5. **Ionic Framework** command line interface (CLI), The Ionic Framework command line utility makes it easy to start, build, run, and emulate Ionic apps. 
+
 
 ### Preview the Ionic app
 
