@@ -1,8 +1,8 @@
 - - -
-# Lab 10 - How to secure your application (Client side)
+# Lab 11 - How to secure your application (Client side)
 
 In the previous lab we update the application **Mandatory application scope** to validate the user before we issue token.
-In this lab we are going to modify the client side app to send the cradentials when the applicaion start.
+In this lab we are going to modify the client side app to send the credentials when the application start.
 We going to implement a challenge handler, The challenge handler will demonstrate a few additional features (APIs) such as the **preemptive login, logout** and obtainAccessToken.
 
 >Note:  For this lab there are snippets files included in the **/snippets** folder of your workspace which can be used to quickly copy/paste the large source code changes in the lab steps below.
@@ -19,7 +19,7 @@ We going to implement a challenge handler, The challenge handler will demonstrat
 	  <img src="images/Lab11-wlclientinit-after.png" width="650"/>
 
 
-	>Note:  We going to obtain a access token when we inside the new implmentation of the login method in the next steps.
+	>Note:  We going to obtain a access token when we inside the new implementation of the login method in the next steps.
 
 	### Create new challenge handler
 
@@ -175,7 +175,7 @@ This is done by creating the challenge handler with the security check like this
 	<img src="images/Lab11-code-change-after-3.png" width="650"/>
 
 	
-7. Next let's chane the logout method, locate the **ibmApp.controller('appCtrl'** and replace the **$scope.logout** function with the code below :
+7. Next let's change the logout method, locate the **ibmApp.controller('appCtrl'** and replace the **$scope.logout** function with the code below :
 	
 		$scope.logout = function() {
 	        console.log(">> in appCtrl - logout");
@@ -220,7 +220,7 @@ This is done by creating the challenge handler with the security check like this
 	
 3. By default the application timeout is 60 seconds, lets open the web console and change the "How long the successful sate valid for (seconds)" to 10 seconds.
 
-4. Select the **UserLogin** adapter under the adpater list on the left side menu.
+4. Select the **UserLogin** adapter under the adapter list on the left side menu.
 
 	<img src="images/Lab11-token-valid-1.png" width="650"/>
 
@@ -236,16 +236,16 @@ This is done by creating the challenge handler with the security check like this
 
 	<img src="images/Lab11-login.png" width="280"/>
 
-	> Note: The application log you out automaticly since the token is not valid any more.
+	> Note: The application log you out automatically since the token is not valid any more.
 	
-8. 	**Login** again but this time use unmatching values for the username and password and let's take a look at the error message that we got.
+8. 	**Login** again but this time use un-matching values for the username and password and let's take a look at the error message that we got.
 
 	<img src="images/Lab11-login-failed.png" width="280"/>	
 	> Note: This is the error message we that was returned by the server, you can change the number of attempts and the error message by updating the UserLogin security check, or change the the attempts using the MFP web console.
 
 
 ### Summary
-You In this lab, you used the used the preemptive logins concept which is classic solution for scanrios where showing a login screen as the first screen of the application, or showing a login screen after a logout, or a login failure. you used the **WLAuthorizationManager.login()** API method to login the user withoug any challenge being recived, you also use the Use the **WL.Client.createWLChallengeHandler()** API method to create and register a challenge Handler.
+You In this lab, you used the used the preemptive logins concept which is classic solution for scenarios where showing a login screen as the first screen of the application, or showing a login screen after a logout, or a login failure. you used the **WLAuthorizationManager.login()** API method to login the user without any challenge being received, you also use the Use the **WL.Client.createWLChallengeHandler()** API method to create and register a challenge Handler.
 
 
 ### In case you got lost on the way

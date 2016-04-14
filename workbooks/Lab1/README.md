@@ -87,13 +87,13 @@ The master detail list can represent anything from list of employee and their de
 	
 8. Open the **splash.html** page under /pages/splash.html and customize your splash to the color scheme and the logo/application name of the last customer you have met.
 
-9. If you look again in your browser you will see the ionic automaticly apply and load your changes 
+9. If you look again in your browser you will see the ionic automatically apply and load your changes 
 
 
 Summary
 -------
 
-You reviewd the Ionic application soruce code and now you can easily customized the look and feel to match you future POC or custom demos.
+You reviewed the Ionic application source code and now you can easily customized the look and feel to match you future POC or custom demos.
 
 If you were unable to complete this lab, you can catch up by running this
 command:

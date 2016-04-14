@@ -16,7 +16,7 @@ Navigate across the different views within the application - do this a few times
 
 Once the app has logged out, you should have a set of captured analytics data on your server.  The following steps will help you locate and generate a custom chart to show the usage patterns within your application. 
 
-If not already open, launch the ‘MobileFirst Analytics Console’ link from the Mobilefirst Operations Console.
+If not already open, launch the ‘MobileFirst Analytics Console’ link from the MobileFirst Operations Console.
 
 Press on the ‘Custom Charts’ link
 

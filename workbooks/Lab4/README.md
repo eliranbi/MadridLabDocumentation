@@ -2,8 +2,8 @@
 # Lab 4 - Use MFP CLI to register and manage your application
 
 
-The MobileFirst platform provide a web console that allow you to easily view and manage your application instances, platfroms and versions, 
-managing your application requires an application registration, registrating your application will also allow you to securly connect to the MobileFirst server and will enable you to use the adapter framework and analytics capabilities of the MFP server.
+The MobileFirst platform provide a web console that allow you to easily view and manage your application instances, platforms and versions, 
+managing your application requires an application registration, registering your application will also allow you to securely connect to the MobileFirst server and will enable you to use the adapter framework and analytics capabilities of the MFP server.
 
 ##Steps
 
@@ -43,7 +43,7 @@ managing your application requires an application registration, registrating you
 
 	> Note:  That **WLAuthorizationManager.obtainAccessToken()** method replace the deprecated **WL.Client.connect()** method that been used in earlier version of MFP to establishes a connection to the MobileFirst       
   
-3. Now before we can preview the application we need to register the application with the MobileFirst Server, **Run** the follwoing command 
+3. Now before we can preview the application we need to register the application with the MobileFirst Server, **Run** the following command 
 
         mfpdev app register
 
@@ -64,7 +64,7 @@ managing your application requires an application registration, registrating you
 
         cordova emulate
 
-6. Let's take a look at the console logs, while the iOS simulator is selected press the Simulator's debug menu and select the "Open cosnole logs option" 
+6. Let's take a look at the console logs, while the iOS simulator is selected press the Simulator's debug menu and select the "Open console logs option" 
 
   <img src="images/Lab4-debug.png" width=400/>
 
@@ -79,7 +79,7 @@ managing your application requires an application registration, registrating you
 
   ![cli mfp console](images/Lab4-access-token.png)
 
-8. Close the simulator and go back to the web console, lets take a look at the built-in managment capabilites of the platform, you can also enetr the following url in your browser  **http://localhost:9080/mfpconsole/index.html#/dashboard**
+8. Close the simulator and go back to the web console, lets take a look at the built-in management capabilities of the platform, you can also enter the following url in your browser  **http://localhost:9080/mfpconsole/index.html#/dashboard**
 
 9. **Press** on the "Employee" application under the "Application" menu on the left side, you will see the Employee Management feature.
 
@@ -97,7 +97,7 @@ managing your application requires an application registration, registrating you
 	![cli mfp console](images/Lab4-access-saved.png)
 
 
-14. **Run** the application again using the cordove emulate command
+14. **Run** the application again using the cordova emulate command
 
         cordova emulate
 
@@ -111,7 +111,7 @@ managing your application requires an application registration, registrating you
 	
   
 ##Summary
-In this lab, you added javascript code to connect to the MobileFirst server when the application start, and used the built-in managment features of the platfrom.
+In this lab, you added javascript code to connect to the MobileFirst server when the application start, and used the built-in management features of the platform.
 
 If you were unable to complete this lab, you can catch up by running this command:
 

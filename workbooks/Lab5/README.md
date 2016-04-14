@@ -5,7 +5,7 @@ If you have looked at the code in app.js in detail, you have noticed that the ap
 
 The MobileFirst Adapter framework provides support for developing adapters in Java or JavaScript to interface with various back-end architectures such as HTTP, SQL and SAP among others.  The Adapter framework also automatically couples with the MFP security and analytics frameworks, enabling consistent security to back-end resources and ability to record, measure and compare the operational characteristics of the adapter traffic - volumes, servers, response times, etc...
 
-For our lab, we will build a Java adapter to interact with a REST API provided by BlueMix service StrongLoop/API Connect (Node.js appliction) available using the follow url: [http://employeenodeapp.mybluemix.net/](http://employeenodeapp.mybluemix.net/)
+For our lab, we will build a Java adapter to interact with a REST API provided by BlueMix service StrongLoop/API Connect (Node.js application) available using the follow url: [http://employeenodeapp.mybluemix.net/](http://employeenodeapp.mybluemix.net/)
 
 <img src="images/Lab5-bmx-service.png" width="600" border="1"/>
 
@@ -25,9 +25,9 @@ The adapter framework allows you to easily adapt to changes in backend data form
 ##Steps
 ### Create the adapter
 
->Note:  In previous versions of MFP, you had to create BackEnd project first, before you coul'd create an adapter, Starting v8.0 you don't need to create a back-end project in order to create an adapter.
+>Note:  In previous versions of MFP, you had to create BackEnd project first, before you could create an adapter, Starting v8.0 you don't need to create a back-end project in order to create an adapter.
 
-1. Create new folder called AdapterServices in paralel to your IBMEmployeeApp folder
+1. Create new folder called AdapterServices in parallel to your IBMEmployeeApp folder
 
         cd ..
         mkdir AdapterServices
@@ -190,7 +190,8 @@ private final String USER_AGENT = "Mozilla/5.0";
   <img src="images/Lab5-adpt-2.png" width="700"/>
   <img src="images/Lab5-adpt-3.png" width="700"/>
   
-
+
+
   
   
 ### Test your adapter
@@ -218,7 +219,7 @@ The MFP CLI provides the ability to test adapters using command line commands.  
 
         mfpdev adapter call 
         
-   Use your keyboard arrow keys to highlight the adapter **EmployeeAdapter** and then press **Enter**.  Then usse your keyboard arrow keys to highlight the endpoint **get:/EmployeeAdapter/services/list** and then press **Enter**.  The adapter response object will be printed in the console:
+   Use your keyboard arrow keys to highlight the adapter **EmployeeAdapter** and then press **Enter**.  Then use your keyboard arrow keys to highlight the endpoint **get:/EmployeeAdapter/services/list** and then press **Enter**.  The adapter response object will be printed in the console:
 
    <img src="images/Lab5-test-adpt-cmd-2.png" width="600"/>
 
@@ -226,7 +227,7 @@ The MFP CLI provides the ability to test adapters using command line commands.  
 
         mfpdev adapter call 
         
-      Use your keyboard arrow keys to highlight the adapter **EmployeeAdapter** and then press **Enter**.  Then usse your keyboard arrow keys to highlight the endpoint **get:/EmployeeAdapter/services/details/{id}** and then press **Enter**.  The adapter response object will be printed in the console:
+      Use your keyboard arrow keys to highlight the adapter **EmployeeAdapter** and then press **Enter**.  Then use your keyboard arrow keys to highlight the endpoint **get:/EmployeeAdapter/services/details/{id}** and then press **Enter**.  The adapter response object will be printed in the console:
 
    <img src="images/Lab5-test-adpt-cmd-1.png" width="600"/>
 

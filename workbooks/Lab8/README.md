@@ -5,18 +5,18 @@ As has been mentioned earlier, the MobileFirst Platform provides the ability to 
 
 In the following lab, we will explore the logging API and add it to our application in several key places.  The logged events will be collected by the Analytics server, and will be available for inspection and charting to give us very specific insight into usage patterns by our community.
 
-### Add WL.Analytics.log() calls to the controller logic in app.js
+### Add WL.Analytics.log() calls to the controller logic in controllers.js
 
-Open the app.js file.
+Open the controllers.js file.
 
 With angular / ionic MVC processing, a controller is called each time the view is loaded by user navigation.  In our app we have 3 views - splash, main (or employee), and details, along with 3 controllers - splashCtrl, mainCtrl, and employeeDetailCtrl.  We will add our logging event to each controller, capturing an event each time one of these views is loaded.
 
-Modify the controller code in app.js and add the following code, which will log the **‘viewLoad’** event with the name of the view (login view in this screenshot):
+Modify the controller code in controllers.js and add the following code, which will log the **‘viewLoad’** event with the name of the view (login view in this screenshot):
 
 <img src="images/Lab8-01-custom-event.png" width="400"/>
 
 Locate the **controllers.js** file under **IBMEmployeeApp/www/js/controllers.js** and start with the **mainCtrl** and add the custom event logic to the bottom of the controller block to log entry into the main view.  
-The mainCtel is called every time the employee.html (employee list) view is displayed. 
+The mainCtrl is called every time the employee.html (employee list) view is displayed. 
 
 *Make sure you change the log message to reference the employee view as shown in the after block below*:
 Your code should look like this

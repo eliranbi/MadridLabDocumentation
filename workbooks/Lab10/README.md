@@ -243,7 +243,7 @@ You can use **this.getName()** to get the current security check name.
 		  <property name="rememberMeDurationSec" defaultValue="120" description="How long is the user remembered when using RememberMe (seconds)"/>
 		</securityCheckDefinition>
 
- >Note: The **securityCheckDefinition** attributes allow you to dinamicly change/set the attribute within the MFP web console.
+ >Note: The **securityCheckDefinition** attributes allow you to dynamically change/set the attribute within the MFP web console.
  
  Your **adapter.xml** should look like this:
  
@@ -263,7 +263,7 @@ You can use **this.getName()** to get the current security check name.
 5. **Save** your changes
 
 ### Deploy the adapter using Maven tools.
-In the prevous labs we deploy the adapter using the mfpdev adapter deploy command, in this lab we are going to use the Maven tools to build the adapter and deploy it to the MFP server.
+In the previous labs we deploy the adapter using the mfpdev adapter deploy command, in this lab we are going to use the Maven tools to build the adapter and deploy it to the MFP server.
 
 1. Go to View → Tool Windows → Maven Projects:
 		<img src="images/Lab10-Ide-tool-windows.png" width="600"/>
@@ -307,7 +307,7 @@ At the application level, you can define a scope that will apply to all the reso
 		cordova prepare
 		cordova emulate
 	
-5. You have noticed that nothing happend after you press he login button, if you look at the debugger area within xcode you can see the following message: **Failed to connect to MobileFirst Server
+5. You have noticed that nothing happened after you press he login button, if you look at the debugger area within xcode you can see the following message: **Failed to connect to MobileFirst Server
 **
 
 	<img src="images/Lab10-debugger-log.png" width="600"/>

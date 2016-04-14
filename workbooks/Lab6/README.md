@@ -68,8 +68,8 @@ The EmployeeService service in app.js returns the list of employees to the contr
         cordova prepare 
         cordova emulate
 
-   > Note that trying to test the adapter on the MBS or on the Browser will not work, you will have to use the cordova emualte. 
-   MBS spport will be added at MFP v8.0 GA
+   > Note that trying to test the adapter on the MBS or on the Browser will not work, you will have to use the cordova emulate. 
+   MBS support will be added at MFP v8.0 GA
 
 3. You should see that the Employee List is populated from the data provided by the MobileFirst Platform adapter.  But, if you tap on any employee you will see that the details are still the template values, not those provided by the adapter.  You will correct that next.
 
@@ -121,7 +121,7 @@ EmployeeDetailsService returns details for the specified employee id.  This set 
     
 ###4. Modify the employeeDetailCtrl controller to match the EmployeDetailsService
 
-We no longer need the 'for' loop to parse the complete set of detail data, as our adapter provides a single set of employee detail data for the requested employee id.  We can simplify the client controller to take adavantage of having moved that "business logic" to the server.  
+We no longer need the 'for' loop to parse the complete set of detail data, as our adapter provides a single set of employee detail data for the requested employee id.  We can simplify the client controller to take advantage of having moved that "business logic" to the server.  
 
 This is a very simple example of offloading logic to the adapter tier, but you can imagine much more complex variations with date/time formatting and calculations, phone numbers, mashups of multiple back-end data sources, calculations, etc...  The adapter modularizes the solution, simplifying and reducing the logic required on the mobile device.
 

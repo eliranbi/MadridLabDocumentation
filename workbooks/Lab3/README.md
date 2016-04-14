@@ -101,18 +101,18 @@ The Mobile Browser Simulator requires a MobileFirst development server to operat
  mfpdev app preview
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  > Note that when you select the **browser: Simple browser rendering** and take a look at the browser console log you will see that the WlCommonInit callback didn't called and also you don't see any indication that the WL SDK was loaded successfuly, take a look at the image below
+  > Note that when you select the **browser: Simple browser rendering** and take a look at the browser console log you will see that the WlCommonInit callback didn't called and also you don't see any indication that the WL SDK was loaded successfully, take a look at the image below
 
   <img src="images/Lab3-console.png" width="500"/>
 
 6. **Run** the application in the browser this time we going to use the **mbs: Mobile Browser Simulator** 
 
-  > Note that when you select the **mbs: Mobile Browser Simulator** and take a look at the browser console log you will see that the WlCommonInit callback was called andwe can see that the wlClient init started and the wlClient init success and we can see the printout of the MFP server url.
+  > Note that when you select the **mbs: Mobile Browser Simulator** and take a look at the browser console log you will see that the WlCommonInit callback was called and we can see that the wlClient init started and the wlClient init success and we can see the printout of the MFP server url.
 
 
   <img src="images/Lab3-console-mbs.png" width="500"/>
 
-	> note that since MobileFirst platfrom is provided as a standart plugin you will not be able to continue testing/developing your application using the standart broweser, you will need to use the Mobile Browser Simulator or device emulator instead.
+	> note that since MobileFirst platform is provided as a standard plugin you will not be able to continue testing/developing your application using the standard browser, you will need to use the Mobile Browser Simulator or device emulator instead.
 
 7. Use the cordova emulate command which will allow you to choose between the platform you choose to add:
 android or iOS.  
@@ -120,7 +120,7 @@ android or iOS.
 
         cordova emulate
 
-  You can select a specific device.  since you didn't specify the device Cordova slect on for you (List of available devices will depend on the type of host machine you are running on and which Android Virtual Devices are installed.)
+  You can select a specific device.  since you didn't specify the device Cordova select on for you (List of available devices will depend on the type of host machine you are running on and which Android Virtual Devices are installed.)
   
   > Note: If you are running on the provided VM, you will only have the **Nexus\_5\_API\_22\_x86** device available.
 
@@ -143,7 +143,3 @@ If you were unable to complete this lab, you can catch up by running this comman
 
      git checkout -f step-3
      
-
-.
-
-   

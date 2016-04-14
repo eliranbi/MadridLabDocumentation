@@ -9,7 +9,7 @@ In addition, client logs which are invaluable at client-side development time, c
 
 The MobileFirst Operational Analytics server is a separately packaged, no-charge element of the MobileFirst Platform Foundation.  It can run on the same physical server as your MFP server or can be installed on its own node or even clustered for highly-scalable, highly-available monitoring.  It is automatically enabled within the development environment with either the Studio or the Command Line Interface.  We'll be using the instance packaged in the CLI for this set of labs.
 
-The Analytics server is made up of data collection and searching logic plus an Operational Analytics console which allows you to view and manage and searchthe collected data in a suite of provided views and charts, plus has the capability to generate custom charts with a variety of built-in and custom events. 
+The Analytics server is made up of data collection and searching logic plus an Operational Analytics console which allows you to view and manage and search the collected data in a suite of provided views and charts, plus has the capability to generate custom charts with a variety of built-in and custom events. 
 
 
 ### Locate and login to the Analytics Console

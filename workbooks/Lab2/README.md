@@ -4,8 +4,8 @@
 In this lab, we will use the Cordova CLI to add the MobileFirst Cordova plugin, These will be the typical steps you will need to go through when you want to add plugins to your application, adding the MobileFirst plugin will allow your app to use the MobileFirst platform different features. 
 General Steps:
 
-1. Within the Ionic application you will run Cordov CLI command to add the plugin.
-2. Use the MobileFirst CLI to preview the application to make sure, the plugin was successfuly added. 
+1. Within the Ionic application you will run Cordova CLI command to add the plugin.
+2. Use the MobileFirst CLI to preview the application to make sure, the plugin was successfully added. 
 
 ##Steps
 
@@ -13,7 +13,7 @@ General Steps:
 
         cd IBMEmployeeApp        
 
-2. **Add** the iOS platfrom, run the following command cordova platform add ios (we didnt check the platfrom folder to our git-repo so you will need to add it yourself) 
+2. **Add** the iOS platform, run the following command cordova platform add ios (we didn't check the platform folder to our git-repo so you will need to add it yourself) 
 
         cordova platform add ios
      <img src="images/Lab2-add-ios.png" width=500/>
@@ -35,13 +35,13 @@ General Steps:
 
   <img src="images/Lab2-run-mfpdev-preview.png"/>
 
-6.  You will see the app start on your default borwser
+6.  You will see the app start on your default browser
 
   <img src="images/Lab2-browser.png" width="250"/>
 
 ##Summary
 In this lab, you enabled the MobileFirst Platform functionality for your existing Ionic/Cordova application by simply use the Cordova plugin add command
-If you were unable to complete this lab, you can catch up by running this command: ** **You will still need to add the iOS platform and the mfp cordova plugin manually since the plugin folder is not commited to the git repo**
+If you were unable to complete this lab, you can catch up by running this command: ** **You will still need to add the iOS platform and the mfp cordova plugin manually since the plugin folder is not committed to the git repo**
 
      git checkout -f step-2
 
