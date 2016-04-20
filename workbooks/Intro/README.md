@@ -41,7 +41,7 @@ In order to get the latest code for the ionic application, run the following git
 command:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-git clone https://github.com/eliranbi/IBMEmployeeApp
+git clone https://github.com/eliranbi/IBMEmployeeApp.git
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To get the latest documentation, code snippets and adapter code, run the following git
