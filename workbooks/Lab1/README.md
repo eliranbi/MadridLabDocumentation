@@ -1,89 +1,79 @@
-Lab 1 - Understand the Ionic application and learn how to customize it.
+Lab 1 - Review Ionic Application & Customization
 =======================================================================
 
-In this short lab (10min) we are going to review the Ionic application artifacts
-and code and then customized it to a customer.
+This short lab (10min) introduces the Ionic application artifacts and code. 
 
 Steps
 -----
 
-1.  Start a command line terminal (i.e. `cmd` on Windows or `terminal` on OS X
-    and Linux).
+1.  Start a command line terminal (i.e. `cmd` on Windows or `terminal` on OS X and Linux).
 
-2.  Change context to the IBMEmployeeApp directory:
+1.  Change context to the IBMEmployeeApp directory:
 
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    cd IBMEmployeeApp
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ```
+cd IBMEmployeeApp
+```
 
-3.  In order to start from a known point for the first lab run the following
-    command:
+1.  In order to start from a known point for the first lab run the following command:
 
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    git checkout -f step-0
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	```
+git checkout -f step-0
+```
 
-    (this checkout will also add the **/snippets** and **/extras** folders for
-    use in the editing steps later on)
+	> **Note:** this checkout will also add the **/snippets** and **/extras** folders for use in the editing steps later on.
 
-4.  Run the application using the Ionic serve command, that will start your
-    default browser and point to **localhost:8100/\#/** it will also track your
-    application code change and will reload the browser with your latest code
-    changes.
+1.  Run the application using the Ionic serve command to start the default browser and point to **localhost:8100/\#/**. This will also track and reload any application code changes.
 
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    ionic serve
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+	```
+ionic serve
+```
 	<img src=images/Lab1-00-ionic-serve.png width=480>
 	
 	<img src=images/Lab1-01-browser.png width=280>
  
 
-5. Lets look at the project structure on the left side 
+1. Review the project structure on the left side 
 	
 	
 	<img src=images/Lab1-02-app-dir.png width=280> 
   
-	- **package.json** - contain all your application dependencies.
-	- **platfroms directory** - contain the platform that you add to your project (iOS, Android etc)
-	- **plugins directory** - contain the different cordova plugin you add to your projects.
-	- **resource directory** - contain the application splash screen and the app icon for 	the different env (default to Ionic)
-	- **scss directory** - contain your application color theme definition and will be applied if you using scss.
-	- **www directory** - contain your application assets like : css files, images, data files, html files, javascript files etc.
-	- **lib directory** - contain the ionic libs and any additional libs you might add.
-	- **index.html** - the main html file for our application.
-	- **app.js** - the main javascript file for our application
-	- **controllers.js** - hold the controllers we defined for each page.
-	- **services.js** - hold the different network calls or any other services that your application might use.
+	- **package.json** - contains all application dependencies.
+	- **platfroms directory** - contains the added device platforms that have been added to the project (iOS, Android etc).
+	- **plugins directory** - contains the different cordova plugins added to the project.
+	- **resource directory** - contains the application splash screen and the app icon for the different platforms (default to Ionic)
+	- **scss directory** - contains application color theme definitions.
+	- **www directory** - contains application assets such as; css files, images, data files, html files, javascript files etc.
+	- **lib directory** - contains the ionic libs and any additional libs that might add.
+	- **index.html** - the main html file for the application.
+	- **app.js** - the main javascript file for the application.
+	- **controllers.js** - JavaScript file containing the controllers that have been defined for each page (view). See [Angular Controllers](https://docs.angularjs.org/guide/controller) for more information.
+	- **services.js** - JavaScript file containing service, or network, calls used by the application. See [Angular Services](https://docs.angularjs.org/guide/services) for more information.
 
-6. Lets take a look at the index.html file
+1. New review the index.html file
 
 	<img src=images/Lab1-03-index.png>
 
-	As you can see we have 3 different sections: 
+	Notice that there are three different sections: 
 	
-	- First part add reference to the Ionic framework css and javascript files along with reference to our custom css style. style.css
-	- Second part reference to our app.js, controllers.js and services.js which include the application business logic.
-	- Third part is the actual bootstrapping of our application we are using the **ng-app** directive to auto bootstrap the app and **ng-controller** directive which attaches a controller class to the view. This is a key aspect of how angular supports the principles behind the Model-View-Controller design pattern.
+	- The first section adds a reference to the Ionic framework css and javascript files along with reference to custom css style.
+	- The second section adds a reference to the app.js, controllers.js and services.js files. These files include the application business, flow, and transaction logic.
+	- The third section is the actual bootstrapping of the application. The bootstrap is performed by including the **ng-app** directive to auto bootstrap the app and **ng-controller** directive which attaches a controller class to the view. This is a key aspect of how angular supports the principles behind the Model-View-Controller design pattern.
 
-	**To learn more you can visit the link below:**
-	[https://docs.angularjs.org/api/ng/directive/ngApp](https://docs.angularjs.org/api/ng/directive/ngApp)
-	[https://docs.angularjs.org/api/ng/directive/ngController](https://docs.angularjs.org/api/ng/directive/ngController)
+> **To learn more**, visit the [ng-app](https://docs.angularjs.org/api/ng/directive/ngApp) and [ng-controller](https://docs.angularjs.org/api/ng/directive/ngController) sections of the Angular documentation.
 
-	Easy to customized 
-	-------	
-The demo asset was built in a way that will allow you easily customized it to match the most common use cases for you demos or POCs.
-The splash and the login screen are easy to change, you just need to choose your own background and company logo, and choose the color scheme that match the customer themes.
-The master detail list can represent anything from list of employee and their details or list of bank accounts and account details, or car insurance policies or insured car and their details. 
+Application Customization
+-------	
+The demo asset was built in a way that will allow easy customization to match the most common use cases for demos or POCs. The splash and login screens are easily modified by editing the exising PNG files to match a  company logo and color scheme.
+
+The master detail list can represent anything from employees, bank accounts, car insurance policiesor or store locations. 
+
 **Take a look at the image below:**
 
-	<img src=images/Lab1-04-splash.png>
+<img src=images/Lab1-04-splash.png>
 
-	- To change the **splash/login background** refer to section A
-	- To change/add **splash/login customer logo** or change the slogo/application name refer to section B
-	- To change the **buttons color scheme** refer to section C , you can find all the default Ionic color scheme in the link below: 
-	[http://ionicframework.com/docs/components/#buttons](http://ionicframework.com/docs/components/#buttons) 
+- To change the **splash/login background** refer to section A
+- To change/add **splash/login customer logo** or change the slogo/application name refer to section B
+- To change the **buttons color scheme** refer to section C, you can find all the default Ionic color schemes at the following link: [http://ionicframework.com/docs/components/#buttons](http://ionicframework.com/docs/components/#buttons) 
 	
 8. Open the **splash.html** page under /pages/splash.html and customize your splash to the color scheme and the logo/application name of the last customer you have met.
 
@@ -93,11 +83,11 @@ The master detail list can represent anything from list of employee and their de
 Summary
 -------
 
-You reviewed the Ionic application source code and now you can easily customized the look and feel to match you future POC or custom demos.
+This lab introduced the Ionic application source code and demonstrated how to easily customize the look and feel to match future POC or custom demo needs.
 
 If you were unable to complete this lab, you can catch up by running this
 command:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- git checkout -f step-1
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
+git checkout -f step-1
+```

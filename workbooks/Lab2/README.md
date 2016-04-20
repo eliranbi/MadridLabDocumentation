@@ -1,11 +1,15 @@
 - - -
-# Lab 2 - Use the Cordova CLI to add the MFP v8.0 Cordova Plugin
+# Lab 2 - The Cordova CLI & MFP v8.0 Cordova Plugin
 
-In this lab, we will use the Cordova CLI to add the MobileFirst Cordova plugin, These will be the typical steps you will need to go through when you want to add plugins to your application, adding the MobileFirst plugin will allow your app to use the MobileFirst platform different features. 
-General Steps:
+This lab will use the Cordova CLI to add the MobileFirst Cordova plugin. These are the standard steps required to add plugins to an application. Adding the MobileFirst plugin allows the application to use the MobileFirst platform features. 
 
-1. Within the Ionic application you will run Cordova CLI command to add the plugin.
-2. Use the MobileFirst CLI to preview the application to make sure, the plugin was successfully added. 
+**General Steps:**
+
+1. Within the IBM Employee application directory, run Cordova CLI command to add a plugin.
+
+1. Add one or more device platforms.
+
+2. Use the MobileFirst CLI to preview the application to ensure the plugin was successfully added. 
 
 ##Steps
 
@@ -13,21 +17,37 @@ General Steps:
 
         cd IBMEmployeeApp        
 
-2. **Add** the iOS platform, run the following command cordova platform add ios (we didn't check the platform folder to our git-repo so you will need to add it yourself) 
+2. **Add** the iOS platform, run the following command cordova platform add ios
 
-        cordova platform add ios
-     <img src="images/Lab2-add-ios.png" width=500/>
+	```
+cordova platform add ios
+```
+	<img src="images/Lab2-add-ios.png" width=500/>
 
-3. **Run** the cordova plugin add cordova-plugin-mfp ( running this command will add some additional plugins to our project like: cordova-plugin-device, cordova-plugin, globalization	fetch.json, cordova-plugin-dialogs, cordova-plugin-mfp )
+3. **Run** the cordova plugin add cordova-plugin-mfp
 
         cordova plugin add cordova-plugin-mfp
      <img src="images/Lab2-add-plugin.png" />
 
-4. **Start** the mobile first server, navigate to your mobile first server installation folder and run the following command
+	> **Note:** Running the add plugin command above will add all the required MFP plugin files from npm. This requires a network connection. For more information on the MFP Cordova Plugin, visit: [https://www.npmjs.com/package/cordova-plugin-mfp](https://www.npmjs.com/package/cordova-plugin-mfp)
 
-        ./run.sh
-       
-  <img src="images/Lab2-mfp-server.png" width=500/>
+4. **Start** the mobile first server, navigate to the mobile first server installation folder and run the following commands:
+
+	*For Mac*
+	- Open a new terminal session
+
+		```
+cd ~/MobileFirst-8.0.0.0
+```
+
+		```
+./run.sh
+```
+		<img src="images/Lab2-mfp-server.png" width=500/>
+		
+	*For Windows*
+	???
+
   
 5. **Run** the mfpdev app preview
 
@@ -35,14 +55,25 @@ General Steps:
 
   <img src="images/Lab2-run-mfpdev-preview.png"/>
 
-6.  You will see the app start on your default browser
+6.  The preview will prompt for using either the simple browser or the mobile browser simulator. Select the simple browser. This will launch the  application using the default browser.
+
+	```
+Verifying server configuration...
+? Select how to preview your app: (Use arrow keys)
+❯ browser: Simple browser rendering 
+  mbs: Mobile Browser Simulator 
+```
 
   <img src="images/Lab2-browser.png" width="250"/>
 
+> **Tip:** To change the default browser use the `mfpdev config` command.
+ 
+
 ##Summary
-In this lab, you enabled the MobileFirst Platform functionality for your existing Ionic/Cordova application by simply use the Cordova plugin add command
+This lab enabled the MobileFirst Platform functionality for an existing Ionic/Cordova application by simply issuing the Cordova plugin add command. 
+
 If you were unable to complete this lab, you can catch up by running this command: ** **You will still need to add the iOS platform and the mfp cordova plugin manually since the plugin folder is not committed to the git repo**
 
-     git checkout -f step-2
-
-   
+```
+git checkout -f step-2
+```
