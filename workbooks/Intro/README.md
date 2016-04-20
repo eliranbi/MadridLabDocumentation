@@ -34,18 +34,15 @@ The following exercise includes 11 micro labs (\~20 min each)
 In order to get the latest code for the ionic application, run the following git command:
 
 ```
-git clone https://github.com/eliranbi/Madrid2016LabMFPConsolidate
-```
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git clone https://github.com/eliranbi/IBMEmployeeApp.git
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
 To get the latest documentation, code snippets and adapter code, run the following git
 command:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 git clone https://github.com/eliranbi/MadridLabME13-15.git
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
 The following directories are available once the repository has been cloned :
 
