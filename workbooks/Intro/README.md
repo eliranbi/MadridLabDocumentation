@@ -1,15 +1,9 @@
 Introduction
 ============
 
-In this set of labs we will demonstrate how to take an existing Ionic/Cordova
-application and add the MobileFirst Platform v8.0 Cordova Plugin, then
-demonstrate some of the capabilities provided by MobileFirst. We will cover
-bootstrapping, application customization, using MFP 8.0 adapters, MFP 8.0
-Operational Analytics, custom report and more.
+This set of labs we will demonstrate how to take an existing Ionic/Cordova application and add the MobileFirst Platform v8.0 Cordova Plugin as well as demonstrate some of the capabilities provided by MobileFirst. The lab will cover bootstrapping, application customization, using MFP 8.0 adapters, MFP 8.0 Operational Analytics, custom report and more.
 
-The activity will start with an Ionic project that we have already created (see
-git repo below). The application is an Employee Directory application, named
-IBMEmployeeApp
+The activity will start with an Ionic project that has already been created (see git repo below). The application is an Employee Directory application, named IBMEmployeeApp
 
 The following exercise includes 11 micro labs (\~20 min each)
 
@@ -37,49 +31,47 @@ The following exercise includes 11 micro labs (\~20 min each)
 
 ### Source code for labs
 
-In order to get the latest code for the ionic application, run the following git
-command:
+In order to get the latest code for the ionic application, run the following git command:
 
+<<<<<<< HEAD
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git clone https://github.com/eliranbi/IBMEmployeeApp
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=======
+```
+git clone https://github.com/eliranbi/IBMEmployeeApp.git
+```
+>>>>>>> f6ae8db3e0e5632e728752175a9bd989cc7a3ae5
 
 To get the latest documentation, code snippets and adapter code, run the following git
 command:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 git clone https://github.com/eliranbi/MadridLabME13-15.git
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
+The following directories are available once the repository has been cloned :
 
 
 Once you clone the repo you will notice the following directories :
 
--   **AdapterServices** - Is a folder that contain our MFP adapter projects, the adapters implement the back-end integration code.
+-   **AdapterServices** - This folder contains the MFP adapter project for implementing the back-end integration code.
 
--   **IBMEmployeeApp** - Is our base Ionic Application that we are going to use
-    for adding the MFP plugin.
+-   **IBMEmployeeApp** - This folder contains the user interface project built using the [Ionic framework](http://ionicframework.com).
 
--   **LabDocuments** - Contain the workbooks for his lab.
--   **snippets** - Contain a collection of copy/paste fragments to simplify
-making the required source code changes in the labs. They are labeled by lab
-name and task, and should be easy to locate and use.the snippets code foe the lab. 
+-   **LabDocuments** - This folder contains the workbooks for his lab.
+-   **snippets** - This folder contains a collection of copy/paste fragments to simplify making the required source code changes in the labs. They are labeled by lab name and task, and should be easy to locate and use.the snippets code foe the lab. 
     
 
 ### Tools used in labs
 
-In this lab we will use the following tools :
+This lab requires the following tools :
 
-1.  The **MFP** mfpdev Command Line Interface (CLI) to interact with the MobileFirst
-    Platform, create projects, create adapters, deploy to the mfp server, view
-    our mfp console etc.
+1.  The **MFP** mfpdev Command Line Interface (CLI) to interact with the MobileFirst Platform, create projects, create adapters, deploy to the mfp server, and view the **MFP** console etc.
 
-2.  Your choice of IDE to edit the code. The **Brackets IDE** was used throughout
-    these labs and can be downloaded from here : <http://brackets.io>. Brackets
-    is a modern, open source text editor that understands web design. You can
-    also use the Brackets Extension manager to install additional plugins for
-    code assistant and live preview. The extensions that are used in this
-    tutorial are:
+1.  Choice of IDEs to edit code. Either choose the **Brackets IDE** or the **IntelliJ IDEA** IDE.
+
+	The **Brackets IDE** was used throughout these labs and can be downloaded from here : <http://brackets.io>. Brackets is a modern, open source text editor that understands web design. Use the Brackets Extension manager to install additional plugins for code assistant and live preview. The extensions that are used in this tutorial are:
 
     -   ionic-brackets.
 
@@ -89,7 +81,7 @@ In this lab we will use the following tools :
 
 	<img src=images/Intro-03-brackets-extensions.png width=600>
 
-3. **IntelliJ IDEA** will be used to create a MFP adapter and uset the built-in Maven project features, IntelliJ IDEA is a Java integrated development environment (IDE) for developing computer software. It is developed by JetBrains, and is available as an Apache 2 Licensed community edition. [https://www.jetbrains.com/idea/download/](https://www.jetbrains.com/idea/download/)
+	The **IntelliJ IDEA** will be used to create a MFP adapter and uset the built-in Maven project features, IntelliJ IDEA is a Java integrated development environment (IDE) for developing computer software. It is developed by JetBrains, and is available as an Apache 2 Licensed community edition. [https://www.jetbrains.com/idea/download/](https://www.jetbrains.com/idea/download/)
 
 	<img src=images/Intro-Intellij.png width=600>
 
@@ -99,6 +91,7 @@ In this lab we will use the following tools :
 
 ### Preview the Ionic app
 
+<<<<<<< HEAD
 Lets start with preview our existing Ionic Employee Directory application.
 
 1.  Start a command line terminal (i.e. `cmd` on Windows or `terminal` on OS X
@@ -119,10 +112,15 @@ Lets start with preview our existing Ionic Employee Directory application.
 
 4.  Start Brackets and choose “Open folder” and select the IBMEmployeeApp
     folder.
+=======
+Start by previewing the existing Ionic Employee Directory application.
+>>>>>>> f6ae8db3e0e5632e728752175a9bd989cc7a3ae5
 
-	<img src=images/Intro-04-open.png width=400>	
+1.  Start Brackets and choose “Open folder” and select the IBMEmployeeApp folder.
 
+	<img src=images/Intro-04-open.png width=400>
 
+<<<<<<< HEAD
 5.  Use the Brackets file Navigator to locate and click on
     **IBMEmployeeApp/www/index.html**.
     
@@ -130,10 +128,15 @@ Lets start with preview our existing Ionic Employee Directory application.
 
 6.  Click the **lighting** icon in the upper right portion of the Brackets
     window to preview the completed application in the browser.
+=======
+2.  Use the Brackets file Navigator to locate and click on **IBMEmployeeApp/www/index.html**.
+
+3.  Click the **lighting** icon in the upper right portion of the Brackets window to preview the completed application in the browser.
+>>>>>>> f6ae8db3e0e5632e728752175a9bd989cc7a3ae5
 
     <img src=images/Intro-05-brackets-icons.png width=80>
 
-Fro the username and password use the combination of **demo/demo** to login
+For the username and password use the combination of **demo/demo** to login
 
 <img src=images/Intro-05.1-app-login.png width=220>
 <img src=images/Intro-06-app-splash.png width=220>
@@ -145,7 +148,4 @@ Fro the username and password use the combination of **demo/demo** to login
 
 ### Summary
 
-You now have the completed and operational Ionic application in your initial
-workspace. In the next lab we will reset our workspace to a known starting point
-using 'git checkout'. In later labs you will be able to use 'git checkout' to
-get the working project code, in case you get into trouble.
+This lab demonstrated a complete and operational Ionic application. In the next lab will require a reset of the workspace workspace to a known starting point using `git checkout`. Each lab uses a `git check` with a tag to reset to a known and working condition should the need arise.

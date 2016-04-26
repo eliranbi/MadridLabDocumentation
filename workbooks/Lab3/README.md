@@ -1,28 +1,25 @@
 - - -
-# Lab 3 - Load MFP framework and application Bootstrapping
+# Lab 3 - Load MFP framework & application Bootstrapping
 
-At this point, you have a MobileFirst Cordova application project, with Ionic-built application logic.  To enable the basic MobileFirst capabilities we will need to add few pieces of code.  
+Labs 1 & 2 introduced the IBM Employee App and demonstrated how to add device platforms and the MobileFirst 8.0 Cordova plugin to the app. To enable the MobileFirst capabilities requires the addition of a few lines of code.  
 
-In this lab, you will add this MFP JavaScript code to the Ionic application source and bring up the new application in an emulator.  
-We are going to use the Mobile Browser Simulator (MBS) , one of the components provided with the MobileFirst.  MBS can also be used to preview the application.  In contrast to the `cordova emulate` command, the `mfpdev app preview` command does not require a platform emulator (such as Android Virtual Device) - it operates entirely in the browser.  The simulator also enables you to leverage browser developer tools such as the debugger, style editor and inspector.
+This lab will demonstrate how to add MFP JavaScript code to the Ionic application source and launch the new application in an emulator.  This lab will also demonstrate using the Mobile Browser Simulator (MBS), one of the components provided with the MobileFirst, to preview the application.  In contrast to the `cordova emulate` command, the `mfpdev app preview` command does not require a platform emulator (such as Android Virtual Device) - it operates entirely in the browser.  The simulator also enables the use of developer tools such as the debugger, style editor and inspector.
 
 The Mobile Browser Simulator requires a MobileFirst development server to operate.  
 
->Note:  For this lab there are snippets files included in the **/snippets** folder of your workspace which can be used to quickly copy/paste the large source code blocks below.
+> **Note:**  For this lab there are snippets files included in the **/snippets** folder of your root workspace which can be used to quickly copy/paste the large source code blocks below.
 
 ##Steps
 
-1.  Open the **IBMEmployeeApp** project using your favorite IDE. You are going to copy some code from `snippets/lab3.js` file to the `app.js` file in your MobileFirst project.
+1.  Open the **IBMEmployeeApp** project using Brackets. 
 
-  > Note:  You may use any IDE you like to perform the labs.  The examples shown use the Brackets IDE.
-
-2. Open the **`app.js`** file in the folder **`IBMEmployeeApp/www/js`** and add the following code immediately after the declaration of ibmApp and just after the *"//Add support for Cordova"* and before the comment *"//application config"*:
+  > **Note:**  You may use any IDE you like to perform the labs.  The examples shown use the Brackets IDE.
+  
+1. Open the **`app.js`** file in the folder **`IBMEmployeeApp/www/js`** and add the following code immediately after the declaration of ibmApp and just after the **`//Add support for Cordova`** and before the comment **`//application config`**:
 
   <img src="images/Lab3-start-code.png" width=600/>
-
-
-   ``` javascript
   
+	```javascript
      //Adding support for cordova.
          ibmApp.run(function($ionicPlatform) {
                console.log('>> ibmApp.run ...');
@@ -43,12 +40,13 @@ The Mobile Browser Simulator requires a MobileFirst development server to operat
 
    ```
   <img src="images/Lab3-app-run.png" width=600/>
+  > **Tip:** Code snippets for this lab are available in the `snippets/lab3.js` file.
 
-3. Within **`app.js`** scroll to the very bottom of the file and add the following code just after the *"// Add MobileFirst configuration stuff."* comment (locate snippet for copy/paste in the **/snippets** folder):
+
+1. Within **`app.js`** scroll to the very bottom of the file and add the following code just after the *"// Add MobileFirst configuration stuff."* comment (locate snippet for copy/paste in the **/snippets** folder):
 
 
-   ``` javascript
-
+   ```javascript
    // Add MobileFirst configuration stuff.
 	 var Messages = {
 		   // Add here your messages for the default language.
@@ -76,7 +74,7 @@ The Mobile Browser Simulator requires a MobileFirst development server to operat
 
   <img src="images/Lab3-mfp-code.png" width=600/>
 
-4. **Save** the app.js file 
+1. **Save** the app.js file 
 
 	### Preview the application
 	
@@ -90,44 +88,30 @@ The Mobile Browser Simulator requires a MobileFirst development server to operat
 	       - Simple browser rendering or 
 	       - Mobile Browser Simulator rendering
 	
-	The **mfpdev cordova preview** command provides easy preview, testing, and debugging of applications using the embedded browser debugger. The Mobile Browser Simulator feature also supports many Cordova device emulation controls for items such as GPS and accelerometer.  However, this requires that the MobileFirst server will be running, make sure you start the MFP server using the ./run.sh command
+	The **mfpdev app preview** command provides easy preview, testing, and debugging of applications using the embedded browser debugger. The Mobile Browser Simulator feature also supports many Cordova device emulation controls for items such as GPS and accelerometer.  However, this requires that the MobileFirst server is running, make sure you start the MFP server using the ./run.sh command
 	
 	We going to preview the application using the **mfpdev app preview** first.
 
 
-5. **Run** the application in the browser we can run the application using the *lighting* button within Brackets or use the following command and select the first option **browser: Simple browser rendering** 
+1. **Run** the application in the browser we can run the application using the *lighting* button within Brackets or use the following command and select the first option **browser: Simple browser rendering** 
 
-	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- mfpdev app preview
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	```
+mfpdev app preview
+```
 
-  > Note that when you select the **browser: Simple browser rendering** and take a look at the browser console log you will see that the WlCommonInit callback didn't called and also you don't see any indication that the WL SDK was loaded successfully, take a look at the image below
-
-  <img src="images/Lab3-console.png" width="500"/>
-
-6. **Run** the application in the browser this time we going to use the **mbs: Mobile Browser Simulator** 
-
-  > Note that when you select the **mbs: Mobile Browser Simulator** and take a look at the browser console log you will see that the WlCommonInit callback was called and we can see that the wlClient init started and the wlClient init success and we can see the printout of the MFP server url.
-
-
-  <img src="images/Lab3-console-mbs.png" width="500"/>
-
-	> note that since MobileFirst platform is provided as a standard plugin you will not be able to continue testing/developing your application using the standard browser, you will need to use the Mobile Browser Simulator or device emulator instead.
-
-7. Use the cordova emulate command which will allow you to choose between the platform you choose to add:
-android or iOS.  
-  > Note that iOS will only be available if you are working from a machine running OS X.  
+1. Use the `cordova emulate` command which will allow you to choose between the platform you choose to add: android or iOS.  
+	> **Note:** that iOS will only be available if you are working from a machine running OS X.  
 
         cordova emulate
 
-  You can select a specific device.  since you didn't specify the device Cordova select on for you (List of available devices will depend on the type of host machine you are running on and which Android Virtual Devices are installed.)
+If you added more than one device platform to Cordova, then you can select a specific device. Otherwise the default device emuluator should start.
   
-  > Note: If you are running on the provided VM, you will only have the **Nexus\_5\_API\_22\_x86** device available.
+  > **Note:** If you are running on the provided VM, you will only have the **Nexus\_5\_API\_22\_x86** device available.
 
   <img src="images/Lab3-cordova-emulate.png" width="600"/>
   <img src="images/Lab3-cordova-success.png" width="600"/>
 
-8.  In a few moments, the application will start up in an ios emulator window.
+8.  In a few moments, the application will start up in an iOS emulator window.
 
 
     <img src="images/Lab3-splash.png" height="450" border="1"/>  <img src="images/Lab3-login.png" height="450" border="1"/>
@@ -137,7 +121,7 @@ android or iOS.
 
 
 ##Summary
-In this lab, you enabled the MobileFirst project to use the services provided by the platform by adding code to the main app.js file.  
+This lab demonstrated the MobileFirst project to use the services provided by the platform by adding code to the main app.js file.  
 
 If you were unable to complete this lab, you can catch up by running this command:
 
