@@ -41,7 +41,7 @@ In order to get the latest code for the ionic application, run the following git
 command:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-git clone https://github.com/eliranbi/IBMEmployeeApp.git
+git clone https://github.com/eliranbi/IBMEmployeeApp
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To get the latest documentation, code snippets and adapter code, run the following git
@@ -101,18 +101,34 @@ In this lab we will use the following tools :
 
 Lets start with preview our existing Ionic Employee Directory application.
 
-1.  Start Brackets and choose “Open folder” and select the IBMEmployeeApp
+1.  Start a command line terminal (i.e. `cmd` on Windows or `terminal` on OS X
+    and Linux).
+
+2.  Change context to the IBMEmployeeApp directory:
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    cd IBMEmployeeApp
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+3.  In order to start from a known point for the first lab run the following
+    command:
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    git checkout -f step-0
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+4.  Start Brackets and choose “Open folder” and select the IBMEmployeeApp
     folder.
 
 	<img src=images/Intro-04-open.png width=400>	
 
 
-2.  Use the Brackets file Navigator to locate and click on
+5.  Use the Brackets file Navigator to locate and click on
     **IBMEmployeeApp/www/index.html**.
     
 
 
-3.  Click the **lighting** icon in the upper right portion of the Brackets
+6.  Click the **lighting** icon in the upper right portion of the Brackets
     window to preview the completed application in the browser.
 
     <img src=images/Intro-05-brackets-icons.png width=80>

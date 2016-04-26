@@ -23,6 +23,10 @@ General Steps:
         cordova plugin add cordova-plugin-mfp
      <img src="images/Lab2-add-plugin.png" />
 
+	>Note:  To be able to easily debug your application and view your application console log, run the following command to add the cordova console plugin 
+	
+		 cordova plugin add cordova-plugin-console
+
 4. **Start** the mobile first server, navigate to your mobile first server installation folder and run the following command
 
         ./run.sh

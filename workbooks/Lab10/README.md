@@ -136,7 +136,7 @@ Create a new adapter
 		import java.util.HashMap;
 		import java.util.Map;
 		
-		public class UserLogin extends UserAuthenticationSecurityCheck {
+		public class UserLoginSecurityCheck extends UserAuthenticationSecurityCheck {
 	
 	    @Override
 	    protected AuthenticatedUser createUser() {
@@ -195,9 +195,18 @@ The **UserAuthenticationSecurityCheck** stores a representation of the current c
 
 In this example, we are using the username for both the id and displayName.
 
-1. First, modify the validateCredentials method to save the username:
+1. First, add the following three variables, just below the class definition 
+
+	*public class UserLoginSecurityCheck extends UserAuthenticationSecurityCheck {* :
 
 		private String userId, displayName;
+		private String errorMsg;
+
+
+  <img src="images/Lab10-add-vars.png" width="650"/>
+
+1. Modify the validateCredentials method to save the username:
+		
 		@Override
 		protected boolean validateCredentials(Map<String, Object> credentials) {
 		if(credentials!=null && credentials.containsKey("username") && credentials.containsKey("password")){
@@ -236,14 +245,14 @@ You can use **this.getName()** to get the current security check name.
 2. in the adapter.xml file, find the **< JAXRSApplicationClass > com.ibm.UserLoginApplication </ JAXRSApplicationClass >** and delete it from the file
 3. In the adapter.xml file, add a **< securityCheckDefinition >** element:
 
-		<securityCheckDefinition name="UserLogin" class="com.ibm.UserLogin">
-		  <property name="maxAttempts" defaultValue="3" description="How many attempts are allowed"/>
-		  <property name="blockedStateExpirationSec" defaultValue="10" description="How long before the client can try again (seconds)"/>
-		  <property name="successStateExpirationSec" defaultValue="60" description="How long is a successful state valid for (seconds)"/>
-		  <property name="rememberMeDurationSec" defaultValue="120" description="How long is the user remembered when using RememberMe (seconds)"/>
+		<securityCheckDefinition name="UserLogin" class="com.ibm.UserLoginSecurityCheck">
+		<property name="maxAttempts" defaultValue="3" displayName="How many attempts are allowed"/>
+		<property name="blockedStateExpirationSec" defaultValue="10" displayName="How long before the client can try again (seconds)"/>
+		<property name="successStateExpirationSec" defaultValue="60" displayName="How long is a successful state valid for (seconds)"/>
 		</securityCheckDefinition>
 
  >Note: The **securityCheckDefinition** attributes allow you to dynamically change/set the attribute within the MFP web console.
+  	
  
  Your **adapter.xml** should look like this:
  
@@ -253,12 +262,14 @@ You can use **this.getName()** to get the current security check name.
 
  **After**
    	
-   	<img src="images/Lab10-Ide-adpt-xml-after.png" width="700"/>
+   	<img src="images/Lab10-Ide-adpt-xml-after1.png" width="700"/>
+
+ >Note: The class should point to the com.ibm.UserLoginSecurityCheck java calss **"com.ibm.UserLoginSecurityCheck"** 
 
 4. Your new class should look like this:
 
-   	<img src="images/Lab10-Ide-class-1.png" width="700"/>
-	<img src="images/Lab10-Ide-class-2.png" width="700"/>
+   	<img src="images/Lab10-UserSecurityCheck1.png" width="700"/>
+	<img src="images/Lab10-UserSecurityCheck2.png" width="700"/>
 
 5. **Save** your changes
 

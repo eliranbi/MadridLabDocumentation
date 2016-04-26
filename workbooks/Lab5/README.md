@@ -197,9 +197,10 @@ private final String USER_AGENT = "Mozilla/5.0";
 ### Test your adapter
 The MFP CLI provides the ability to test adapters using command line commands.  This is not only helpful for manually testing your adapters during development, but it can be leveraged by automated test scripts as part of your DevOps process automation strategy.
 
-1. To test your adapter using the MFP CLI, you must first build it and deploy it to the MFP Development server.
+1. To test your adapter using the MFP CLI, you must first **build** it and then deploy it to the MFP Development server.
    
-        mfpdev adapter deploy
+        mfpdev adapter build
+        mfpdev adapter deploy        
    
    <img src="images/Lab5-adpt-deploy.png" width="600"/>
   

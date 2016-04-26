@@ -6,6 +6,8 @@ and code and then customized it to a customer.
 
 Steps
 -----
+If you haven't already done so, run the following commands below to start from a known point for the first lab:
+
 
 1.  Start a command line terminal (i.e. `cmd` on Windows or `terminal` on OS X
     and Linux).
