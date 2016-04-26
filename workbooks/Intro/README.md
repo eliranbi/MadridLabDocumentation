@@ -33,15 +33,9 @@ The following exercise includes 11 micro labs (\~20 min each)
 
 In order to get the latest code for the ionic application, run the following git command:
 
-<<<<<<< HEAD
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git clone https://github.com/eliranbi/IBMEmployeeApp
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-=======
-```
-git clone https://github.com/eliranbi/IBMEmployeeApp.git
-```
->>>>>>> f6ae8db3e0e5632e728752175a9bd989cc7a3ae5
 
 To get the latest documentation, code snippets and adapter code, run the following git
 command:
@@ -91,8 +85,7 @@ This lab requires the following tools :
 
 ### Preview the Ionic app
 
-<<<<<<< HEAD
-Lets start with preview our existing Ionic Employee Directory application.
+Before we can start with preview our existing Ionic Employee Directory application, we need to get to the begining stage of our application, follow the steps below: 
 
 1.  Start a command line terminal (i.e. `cmd` on Windows or `terminal` on OS X
     and Linux).
@@ -110,29 +103,17 @@ Lets start with preview our existing Ionic Employee Directory application.
     git checkout -f step-0
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-4.  Start Brackets and choose “Open folder” and select the IBMEmployeeApp
-    folder.
-=======
-Start by previewing the existing Ionic Employee Directory application.
->>>>>>> f6ae8db3e0e5632e728752175a9bd989cc7a3ae5
+
+### Start by previewing the existing Ionic Employee Directory application.
 
 1.  Start Brackets and choose “Open folder” and select the IBMEmployeeApp folder.
 
 	<img src=images/Intro-04-open.png width=400>
 
-<<<<<<< HEAD
-5.  Use the Brackets file Navigator to locate and click on
-    **IBMEmployeeApp/www/index.html**.
-    
 
-
-6.  Click the **lighting** icon in the upper right portion of the Brackets
-    window to preview the completed application in the browser.
-=======
 2.  Use the Brackets file Navigator to locate and click on **IBMEmployeeApp/www/index.html**.
 
 3.  Click the **lighting** icon in the upper right portion of the Brackets window to preview the completed application in the browser.
->>>>>>> f6ae8db3e0e5632e728752175a9bd989cc7a3ae5
 
     <img src=images/Intro-05-brackets-icons.png width=80>
 

@@ -29,13 +29,12 @@ cordova platform add ios
         cordova plugin add cordova-plugin-mfp
      <img src="images/Lab2-add-plugin.png" />
 
-<<<<<<< HEAD
 	>Note:  To be able to easily debug your application and view your application console log, run the following command to add the cordova console plugin 
 	
 		 cordova plugin add cordova-plugin-console
 
 4. **Start** the mobile first server, navigate to your mobile first server installation folder and run the following command
-=======
+
 	> **Note:** Running the add plugin command above will add all the required MFP plugin files from npm. This requires a network connection. For more information on the MFP Cordova Plugin, visit: [https://www.npmjs.com/package/cordova-plugin-mfp](https://www.npmjs.com/package/cordova-plugin-mfp)
 
 4. **Start** the mobile first server, navigate to the mobile first server installation folder and run the following commands:
@@ -52,10 +51,6 @@ cd ~/MobileFirst-8.0.0.0
 ```
 		<img src="images/Lab2-mfp-server.png" width=500/>
 		
-	*For Windows*
-	???
->>>>>>> f6ae8db3e0e5632e728752175a9bd989cc7a3ae5
-
   
 5. **Run** the mfpdev app preview
 
