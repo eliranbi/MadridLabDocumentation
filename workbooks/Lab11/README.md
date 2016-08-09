@@ -76,7 +76,7 @@ We going to implement a challenge handler, The challenge handler will demonstrat
     
 		    $scope.registerChallengeHandler = function(){        
 	        console.log(">> in $scope.registerChllangeHandler ... ");
-	        $scope.userLoginChallengeHandler = WL.Client.createWLChallengeHandler($scope.securityCheckName);    
+	        $scope.userLoginChallengeHandler = WL.Client.SecurityCheckChallengeHandler($scope.securityCheckName);    
 	        $scope.userLoginChallengeHandler.securityCheckName = $scope.securityCheckName;    
 	        
 	        $scope.userLoginChallengeHandler.handleChallenge = function(challenge) {
@@ -100,7 +100,7 @@ We going to implement a challenge handler, The challenge handler will demonstrat
 	            console.log(">>> statusMsg : " + statusMsg);
 	        };
 	
-	        $scope.userLoginChallengeHandler.processSuccess = function(data) {                
+	        $scope.userLoginChallengeHandler.handleChallenge = function(data) {                
 	            console.log(">> in UserLoginChallengeHandler - userLoginChallengeHandler.processSuccess ...");        
 	            $scope.isChallenged = false;     
 	            $timeout(function(){        
