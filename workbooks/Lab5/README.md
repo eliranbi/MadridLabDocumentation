@@ -39,7 +39,7 @@ The adapter framework allows you to easily adapt to changes in backend data form
    <img src="images/Lab5-mkdir.png" width="600"/>
 2. **Create** a Java-based adapter to your project
 
-        mfpdeve adapter create
+        mfpdev adapter create
 
    1. When prompted, name your adapter **`EmployeeAdapter`**
    
