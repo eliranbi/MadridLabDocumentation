@@ -70,6 +70,8 @@ The EmployeeService service in app.js returns the list of employees to the contr
 
    > Note that trying to test the adapter on the MBS or on the Browser will not work, you will have to use the cordova emulate. 
    MBS support will be added at MFP v8.0 GA
+   
+   > Note: If you are unable to login, you may need to first re-register the application using `mfpdev app register` then issue a `mfpdev app pull` to get the latest configuration. Then perform the above cordova compands again.
 
 3. You should see that the Employee List is populated from the data provided by the MobileFirst Platform adapter.  But, if you tap on any employee you will see that the details are still the template values, not those provided by the adapter.  You will correct that next.
 
