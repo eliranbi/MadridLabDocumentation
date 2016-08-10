@@ -193,6 +193,7 @@ You can use **this.getName()** to get the current security check name.
 5. **Save** your changes
 6. **Deploy** the new adapter to the console.
 	
+		mfpdev adapter build
 		mfpdev adapter deploy
 
 	<img src="images/Lab10-adpt-deploy.png" width="700"/>
