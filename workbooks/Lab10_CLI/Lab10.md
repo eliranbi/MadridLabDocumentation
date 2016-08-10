@@ -55,7 +55,7 @@ In this labe we going to use a security check asking for a username and password
 	- UserLoginApplication.java
 	- UserLoginResource.java
 	
-11. Create a new java calss name it called **UserLoginSecurityCheck.java**
+11. Create a new java class name and call it **UserLoginSecurityCheck.java**
 12. **Open** the UserLoginSecurityCheck.java under **UserLogin/src/main/java/com/ibm/UserLoginSecurityCheck.java**
 12. **Copy** the following code 
 
@@ -215,6 +215,9 @@ At the application level, you can define a scope that will apply to all the reso
 3. **Press** the "Add" button
 	
 	<img src="images/Lab10-set-secuirty-3.png" width="700"/>
+
+4. Change directory to the root of your IBMEmployeeApp directory
+
 
 4. **Run** the following command to start the application 
 		
